@@ -29,12 +29,12 @@ class Calculator extends Component {
         <div className="calcButton calcGray">AC</div>
         <div className="calcButton calcGray">+/-</div>
         <div className="calcButton calcGray">%</div>
-        <div className="calcButton calcOrange">/</div>
+        <div className="calcButton calcOrange">÷</div>
 
         <div className="calcButton calcGray">7</div>
         <div className="calcButton calcGray">8</div>
         <div className="calcButton calcGray">9</div>
-        <div className="calcButton calcOrange">x</div>
+        <div className="calcButton calcOrange">×</div>
 
         <div className="calcButton calcGray">4</div>
         <div className="calcButton calcGray">5</div>
