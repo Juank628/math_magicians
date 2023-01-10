@@ -19,7 +19,7 @@
       "react/react-in-jsx-scope": "off",
       "import/no-unresolved": "off",
       "no-shadow": "off",
-      "react/prefer-stateless-function": ["disabled"] //according with the requirements all the components should be class components
+      "react/prefer-stateless-function": 0 //according with the requirements all the components should be class components
     },
     "ignorePatterns": [
       "dist/",
