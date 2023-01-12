@@ -1,23 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Button extends Component {
-  render() {
-    const {
-      text, clickHandler, color, columns,
-    } = this.props;
+export default function Button(props) {
+  const {
+    text, clickHandler, color, columns,
+  } = props;
 
-    return (
-      <button
-        type="button"
-        className={`calcButton calc${color}`}
-        style={{ gridColumnEnd: `span ${columns}` }}
-        onClick={clickHandler}
-      >
-        {text}
-      </button>
-    );
-  }
+  return (
+    <button
+      type="button"
+      className={`calcButton calc${color}`}
+      style={{ gridColumnEnd: `span ${columns}` }}
+      onClick={clickHandler}
+    >
+      {text}
+    </button>
+  );
 }
 
 Button.defaultProps = {
