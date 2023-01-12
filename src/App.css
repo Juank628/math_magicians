@@ -20,6 +20,8 @@
   place-items: center;
   height: 50px;
   border: 1px solid #cacaca;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .calcButtonLong {
