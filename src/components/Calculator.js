@@ -1,54 +1,81 @@
 import React, { Component } from 'react';
+import calculate from '../logic/calculate';
+import Button from './Button';
 
 class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      displayValue: 0,
+      displayValue: '0',
+      calculatorData: {
+        total: null,
+        next: null,
+        operation: null,
+      },
     };
   }
 
-  onChangeHandler = (e) => {
+  updateDisplay = (newCalculatorData) => {
+    const { next, operation, total } = newCalculatorData;
+    if (next === null && operation === null && total === null) {
+      this.setState({ displayValue: 0 });
+      return;
+    }
+    if (next === null) {
+      this.setState({ displayValue: total });
+      return;
+    }
+    this.setState({ displayValue: next });
+  }
+
+  btnClickHandler = (e) => {
+    const button = e.target.textContent;
+    const { calculatorData } = this.state;
+    const newCalculatorData = calculate(calculatorData, button);
+    this.updateDisplay(newCalculatorData);
     this.setState({
-      displayValue: e.target.value,
+      calculatorData: newCalculatorData,
     });
-  };
+  }
 
   render() {
     const { displayValue } = this.state;
 
     return (
       <section className="calcContainer">
+
         <input
           type="text"
           className="calcDisplay"
           value={displayValue}
           onChange={this.onChangeHandler}
+          disabled
         />
 
-        <div className="calcButton calcGray">AC</div>
-        <div className="calcButton calcGray">+/-</div>
-        <div className="calcButton calcGray">%</div>
-        <div className="calcButton calcOrange">÷</div>
+        <Button text="AC" clickHandler={this.btnClickHandler} />
+        <Button text="+/-" clickHandler={this.btnClickHandler} />
+        <Button text="%" clickHandler={this.btnClickHandler} />
+        <Button text="÷" clickHandler={this.btnClickHandler} color="Orange" />
 
-        <div className="calcButton calcGray">7</div>
-        <div className="calcButton calcGray">8</div>
-        <div className="calcButton calcGray">9</div>
-        <div className="calcButton calcOrange">×</div>
+        <Button text="7" clickHandler={this.btnClickHandler} />
+        <Button text="8" clickHandler={this.btnClickHandler} />
+        <Button text="9" clickHandler={this.btnClickHandler} />
+        <Button text="x" clickHandler={this.btnClickHandler} color="Orange" />
 
-        <div className="calcButton calcGray">4</div>
-        <div className="calcButton calcGray">5</div>
-        <div className="calcButton calcGray">6</div>
-        <div className="calcButton calcOrange">-</div>
+        <Button text="4" clickHandler={this.btnClickHandler} />
+        <Button text="5" clickHandler={this.btnClickHandler} />
+        <Button text="6" clickHandler={this.btnClickHandler} />
+        <Button text="-" clickHandler={this.btnClickHandler} color="Orange" />
 
-        <div className="calcButton calcGray">1</div>
-        <div className="calcButton calcGray">2</div>
-        <div className="calcButton calcGray">3</div>
-        <div className="calcButton calcOrange">+</div>
+        <Button text="1" clickHandler={this.btnClickHandler} />
+        <Button text="2" clickHandler={this.btnClickHandler} />
+        <Button text="3" clickHandler={this.btnClickHandler} />
+        <Button text="+" clickHandler={this.btnClickHandler} color="Orange" />
 
-        <div className="calcButton calcButtonLong calcGray">0</div>
-        <div className="calcButton calcGray">.</div>
-        <div className="calcButton calcOrange">=</div>
+        <Button text="0" clickHandler={this.btnClickHandler} columns="2" />
+        <Button text="." clickHandler={this.btnClickHandler} />
+        <Button text="=" clickHandler={this.btnClickHandler} color="Orange" />
+
       </section>
     );
   }
