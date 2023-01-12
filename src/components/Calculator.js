@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import calculate from '../logic/calculate';
+import Button from './Button';
 
 class Calculator extends Component {
   constructor(props) {
@@ -42,6 +43,7 @@ class Calculator extends Component {
 
     return (
       <section className="calcContainer">
+
         <input
           type="text"
           className="calcDisplay"
@@ -50,143 +52,30 @@ class Calculator extends Component {
           disabled
         />
 
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          AC
-        </button>
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          +/-
-        </button>
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          %
-        </button>
-        <button
-          type="button"
-          className="calcButton calcOrange"
-          onClick={this.btnClickHandler}
-        >
-          ÷
-        </button>
+        <Button text="AC" clickHandler={this.btnClickHandler} />
+        <Button text="+/-" clickHandler={this.btnClickHandler} />
+        <Button text="%" clickHandler={this.btnClickHandler} />
+        <Button text="÷" clickHandler={this.btnClickHandler} color="Orange" />
 
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          7
-        </button>
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          8
-        </button>
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          9
-        </button>
-        <button
-          type="button"
-          className="calcButton calcOrange"
-          onClick={this.btnClickHandler}
-        >
-          x
-        </button>
+        <Button text="7" clickHandler={this.btnClickHandler} />
+        <Button text="8" clickHandler={this.btnClickHandler} />
+        <Button text="9" clickHandler={this.btnClickHandler} />
+        <Button text="x" clickHandler={this.btnClickHandler} color="Orange" />
 
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          4
-        </button>
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          5
-        </button>
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          6
-        </button>
-        <button
-          type="button"
-          className="calcButton calcOrange"
-          onClick={this.btnClickHandler}
-        >
-          -
-        </button>
+        <Button text="4" clickHandler={this.btnClickHandler} />
+        <Button text="5" clickHandler={this.btnClickHandler} />
+        <Button text="6" clickHandler={this.btnClickHandler} />
+        <Button text="-" clickHandler={this.btnClickHandler} color="Orange" />
 
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          1
-        </button>
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          2
-        </button>
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          3
-        </button>
-        <button
-          type="button"
-          className="calcButton calcOrange"
-          onClick={this.btnClickHandler}
-        >
-          +
-        </button>
+        <Button text="1" clickHandler={this.btnClickHandler} />
+        <Button text="2" clickHandler={this.btnClickHandler} />
+        <Button text="3" clickHandler={this.btnClickHandler} />
+        <Button text="+" clickHandler={this.btnClickHandler} color="Orange" />
 
-        <button
-          type="button"
-          className="calcButton calcButtonLong calcGray"
-          onClick={this.btnClickHandler}
-        >
-          0
-        </button>
-        <button
-          type="button"
-          className="calcButton calcGray"
-          onClick={this.btnClickHandler}
-        >
-          .
-        </button>
-        <button
-          type="button"
-          className="calcButton calcOrange"
-          onClick={this.btnClickHandler}
-        >
-          =
-        </button>
+        <Button text="0" clickHandler={this.btnClickHandler} columns="2" />
+        <Button text="." clickHandler={this.btnClickHandler} />
+        <Button text="=" clickHandler={this.btnClickHandler} color="Orange" />
+
       </section>
     );
   }
