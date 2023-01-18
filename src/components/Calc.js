@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 import Button from './Button';
-import styles from './Calculator.module.css';
+import styles from './Calc.module.css';
 
-export default function Calculator() {
+export default function Calc() {
   const [displayValue, setDisplayValue] = useState(['0']);
   const [calculatorData, setCalculatorData] = useState({
     total: null,
