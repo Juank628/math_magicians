@@ -1,0 +1,8 @@
+.mainContainer {
+  display: flex;
+  padding: 20px;
+}
+
+.sectionContainer {
+  padding: 20px;
+}
