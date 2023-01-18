@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 import Button from './Button';
+import styles from './Calculator.module.css';
 
 export default function Calculator() {
   const [displayValue, setDisplayValue] = useState(['0']);
@@ -31,10 +32,10 @@ export default function Calculator() {
   };
 
   return (
-    <section className="calcContainer">
+    <section className={styles.calcContainer}>
       <input
         type="text"
-        className="calcDisplay"
+        className={styles.calcDisplay}
         value={displayValue}
         disabled
       />

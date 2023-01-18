@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Button.module.css';
 
 export default function Button(props) {
   const {
@@ -9,7 +10,7 @@ export default function Button(props) {
   return (
     <button
       type="button"
-      className={`calcButton calc${color}`}
+      className={`${styles.calcButton} ${styles[`calc${color}`]}`}
       style={{ gridColumnEnd: `span ${columns}` }}
       onClick={clickHandler}
     >
