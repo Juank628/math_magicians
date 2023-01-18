@@ -9,3 +9,7 @@
   gap: 10px;
   list-style-type: none;
 }
+
+.linksList a {
+  padding: 10px;
+}

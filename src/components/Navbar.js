@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
@@ -6,9 +7,9 @@ export default function Navbar() {
     <nav className={styles.container}>
       <h1 className={styles.title}>Math Magicians</h1>
       <ul className={styles.linksList}>
-        <li>Home</li>
-        <li>Calculator</li>
-        <li>Quote</li>
+        <li><Link to="home">Home</Link></li>
+        <li><Link to="calculator">Calculator</Link></li>
+        <li><Link to="quotes">Quotes</Link></li>
       </ul>
     </nav>
   );
