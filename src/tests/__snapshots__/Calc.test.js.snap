@@ -1,0 +1,491 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calc tests snapshot test 1`] = `
+<section
+  className="calcContainer"
+>
+  <input
+    className="calcDisplay"
+    disabled={true}
+    type="text"
+    value={
+      Array [
+        "0",
+      ]
+    }
+  />
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    AC
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    +/-
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    %
+  </button>
+  <button
+    className="calcButton calcOrange"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    ÷
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    7
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    8
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    9
+  </button>
+  <button
+    className="calcButton calcOrange"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    x
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    4
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    5
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    6
+  </button>
+  <button
+    className="calcButton calcOrange"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    -
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    1
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    2
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    3
+  </button>
+  <button
+    className="calcButton calcOrange"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    +
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 2",
+      }
+    }
+    type="button"
+  >
+    0
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    .
+  </button>
+  <button
+    className="calcButton calcOrange"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    =
+  </button>
+</section>
+`;
+
+exports[`snapshot test 1`] = `
+<section
+  className="calcContainer"
+>
+  <input
+    className="calcDisplay"
+    disabled={true}
+    type="text"
+    value={
+      Array [
+        "0",
+      ]
+    }
+  />
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    AC
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    +/-
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    %
+  </button>
+  <button
+    className="calcButton calcOrange"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    ÷
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    7
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    8
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    9
+  </button>
+  <button
+    className="calcButton calcOrange"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    x
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    4
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    5
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    6
+  </button>
+  <button
+    className="calcButton calcOrange"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    -
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    1
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    2
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    3
+  </button>
+  <button
+    className="calcButton calcOrange"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    +
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 2",
+      }
+    }
+    type="button"
+  >
+    0
+  </button>
+  <button
+    className="calcButton calcGray"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    .
+  </button>
+  <button
+    className="calcButton calcOrange"
+    onClick={[Function]}
+    style={
+      Object {
+        "gridColumnEnd": "span 1",
+      }
+    }
+    type="button"
+  >
+    =
+  </button>
+</section>
+`;
